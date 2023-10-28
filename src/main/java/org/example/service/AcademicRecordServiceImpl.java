@@ -51,6 +51,6 @@ public class AcademicRecordServiceImpl implements AcademicRecordService {
 
   @Override
   public Grade addGrade(Grade newGrade) {
-    return null;
+    return newGrade;
   }
 }
