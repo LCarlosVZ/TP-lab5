@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.example.model.Grade;
 import org.example.repository.GradeInMemoryRepositoryImpl;
+import org.example.repository.GradeUsingFileRepositoryImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -14,9 +15,10 @@ class AcademicRecordServiceImplTest {
 
   private AcademicRecordService academicRecordService;
 
+  //GradeInMemoryRepositoryImpl por GradeUsingFileRepositoryImpl
   @BeforeEach
   void setUp() {
-    this.academicRecordService = new AcademicRecordServiceImpl(new GradeInMemoryRepositoryImpl());
+    this.academicRecordService = new AcademicRecordServiceImpl(new GradeUsingFileRepositoryImpl());
   }
 
   @Test
