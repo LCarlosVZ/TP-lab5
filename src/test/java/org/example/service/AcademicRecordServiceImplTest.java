@@ -15,7 +15,6 @@ class AcademicRecordServiceImplTest {
 
   private AcademicRecordService academicRecordService;
 
-  //GradeInMemoryRepositoryImpl por GradeUsingFileRepositoryImpl
   @BeforeEach
   void setUp() {
     this.academicRecordService = new AcademicRecordServiceImpl(new GradeUsingFileRepositoryImpl());
